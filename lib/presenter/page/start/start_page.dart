@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify2/gen/assets.gen.dart';
-import 'package:spotify2/presenter/base/base_page.dart';
+import 'package:spotify2/presenter/base/base_stateless_page.dart';
 import 'package:spotify2/presenter/base/colors.dart';
 import 'package:spotify2/presenter/base/dimen.dart';
 import 'package:spotify2/presenter/base/styles.dart';
@@ -9,7 +9,7 @@ import 'package:spotify2/presenter/router/router.gr.dart';
 import 'package:spotify2/presenter/widgets/app_button.dart';
 
 @RoutePage()
-class StartPage extends BasePage {
+class StartPage extends BaseStatelessPage {
   const StartPage({super.key});
 
   @override

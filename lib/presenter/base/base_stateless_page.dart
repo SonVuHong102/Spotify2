@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:spotify2/presenter/base/keyboard.dart';
 
-abstract class BasePage extends StatelessWidget {
-  const BasePage({super.key});
+abstract class BaseStatelessPage extends StatelessWidget {
+  const BaseStatelessPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -68,7 +68,7 @@ class _AppFormFieldState extends State<AppFormField> {
       keyboardType: widget.isPassword
           ? TextInputType.visiblePassword
           : TextInputType.emailAddress,
-      obscureText: isVisible,
+      obscureText: !isVisible,
     );
   }
 }
