@@ -1,5 +1,5 @@
-import 'package:spotify2/domain/entity/library_entity.dart';
+import 'package:spotify2/domain/entity/track_entity.dart';
 
 abstract class SpotifyRepository {
-  List<LibraryEntity> getLibraryList();
+  List<TrackEntity> getLibraryList();
 }

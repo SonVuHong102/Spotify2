@@ -1,28 +1,15 @@
-import 'package:spotify2/domain/entity/library_entity.dart';
+import 'package:spotify2/domain/entity/track_entity.dart';
+import 'package:spotify2/gen/assets.gen.dart';
 
 class LocalDataSource {
-  List<LibraryEntity> getLibraryList() {
-    return [
-      LibraryEntity(
-        url: '',
-        name: '',
-        total: '',
+  List<TrackEntity> getLibraryList() {
+    return List.generate(
+      11,
+      (index) => TrackEntity(
+        url: Assets.images.image2.path,
+        name: 'Liked songs',
+        artist: '128',
       ),
-      LibraryEntity(
-        url: '',
-        name: '',
-        total: '',
-      ),
-      LibraryEntity(
-        url: '',
-        name: '',
-        total: '',
-      ),
-      LibraryEntity(
-        url: '',
-        name: '',
-        total: '',
-      ),
-    ];
+    );
   }
 }

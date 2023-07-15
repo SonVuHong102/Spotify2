@@ -6,6 +6,7 @@ import 'package:spotify2/presenter/base/base_stateless_page.dart';
 import 'package:spotify2/presenter/base/colors.dart';
 import 'package:spotify2/presenter/base/dimen.dart';
 import 'package:spotify2/presenter/base/styles.dart';
+import 'package:spotify2/presenter/router/router.gr.dart';
 import 'package:spotify2/presenter/widgets/app_button.dart';
 import 'package:spotify2/presenter/widgets/app_form_field.dart';
 
@@ -78,7 +79,9 @@ class LoginPage extends BaseStatelessPage {
                 height16,
                 AppButton(
                   text: 'Login',
-                  onPressed: () {},
+                  onPressed: () {
+                    context.router.push(const HomeRoute());
+                  },
                 ),
                 height24,
                 Row(

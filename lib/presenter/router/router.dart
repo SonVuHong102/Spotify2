@@ -8,5 +8,12 @@ class AppRouter extends $AppRouter {
         AutoRoute(initial: true, page: SplashRoute.page),
         AutoRoute(page: StartRoute.page),
         AutoRoute(page: LoginRoute.page),
+        AutoRoute(
+          page: HomeRoute.page,
+          children: [
+            AutoRoute(path: '', page: LibraryRoute.page),
+            AutoRoute(path: 'history', page: HistoryRoute.page),
+          ],
+        ),
       ];
 }
